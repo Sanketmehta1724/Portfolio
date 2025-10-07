@@ -105,7 +105,7 @@ export default function Portfolio() {
       description:
         "Resume-based question generator with voice Q&A practice and feedback. Real-time analytics dashboard and personalized plans to boost readiness.",
       tech: ["AI/ML", "Voice Recognition", "React", "Analytics"],
-      link: "https://preptalk.render.com",
+      link: "https://preptalk.onrender.com",
       year: "2025",
       image:
         "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&h=400&fit=crop",
@@ -138,6 +138,7 @@ export default function Portfolio() {
       description:
         "Developed full-stack CRUD application for employee management using Java Spring Boot backend with RESTful APIs, React frontend, and Maven build automation.",
       tech: ["Spring Boot", "React", "Maven", "REST API"],
+      link: "https://github.com/sanketmehta1724/Employee-Management",
       year: "2025",
       image:
         "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&h=400&fit=crop",
@@ -148,6 +149,7 @@ export default function Portfolio() {
       description:
         "Console-based kids learning platform using Java with learning modules, practice quizzes, and games. Integrated PhpMyAdmin database with JDBC connectivity.",
       tech: ["Java", "JDBC", "MySQL", "PhpMyAdmin"],
+      link: "https://github.com/sanketmehta1724/Kidzee",
       year: "2024",
       image:
         "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&h=400&fit=crop",
@@ -158,6 +160,7 @@ export default function Portfolio() {
       description:
         "Developed Java-based console food-ordering system with persistent storage and custom data structures. Implemented asynchronous order processing.",
       tech: ["Java", "Data Structures", "Async Processing"],
+      link: "https://github.com/sanketmehta1724/Food-Ordering-System",
       year: "2024",
       image:
         "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&h=400&fit=crop",
@@ -241,15 +244,15 @@ export default function Portfolio() {
     },
   ];
 
-  const bgClass = darkMode ? "bg-[#354259]" : "bg-[#C2DED1]";
-  const textClass = darkMode ? "text-[#ECE5C7]" : "text-[#354259]";
-  const textSecondary = darkMode ? "text-[#CDC2AE]" : "text-[#354259]/70";
-  const cardBg = darkMode ? "bg-[#354259]" : "bg-[#ECE5C7]";
-  const cardBorder = darkMode ? "border-[#CDC2AE]/30" : "border-[#354259]/20";
-  const navBg = darkMode ? "bg-[#354259]/95" : "bg-[#ECE5C7]/95";
-  const accentColor = darkMode ? "#CDC2AE" : "#354259";
-  const buttonBg = darkMode ? "#CDC2AE" : "#354259";
-  const buttonText = darkMode ? "#354259" : "#ECE5C7";
+  const bgClass = darkMode ? "bg-[#0C0C0C]" : "bg-[#C4E1E6]";
+  const textClass = darkMode ? "text-[#E8F9FF]" : "text-[#0C0C0C]";
+  const textSecondary = darkMode ? "text-[#C4E1E6]" : "text-[#0C0C0C]/70";
+  const cardBg = darkMode ? "bg-[#0C0C0C]" : "bg-[#E8F9FF]";
+  const cardBorder = darkMode ? "border-[#C4E1E6]/30" : "border-[#0C0C0C]/20";
+  const navBg = darkMode ? "bg-[#0C0C0C]/95" : "bg-[#E8F9FF]/95";
+  const accentColor = darkMode ? "#C4E1E6" : "#0C0C0C";
+  const buttonBg = darkMode ? "#C4E1E6" : "#0C0C0C";
+  const buttonText = darkMode ? "#0C0C0C" : "#E8F9FF";
 
   return (
     <div className={`min-h-screen overflow-x-hidden ${bgClass} transition-colors duration-300`}>
@@ -299,19 +302,19 @@ export default function Portfolio() {
   onClick={() => setDarkMode(!darkMode)}
   className={`p-1.5 sm:p-2 rounded-full border transition-all duration-300`}
   style={{
-    backgroundColor: darkMode ? "#354259" : "rgba(236, 229, 199, 0.95)", // dark mode bg | light mode white
-    borderColor: darkMode ? "#CDC2AE" : "#354259",     // consistent border colors
+    backgroundColor: darkMode ? "#0C0C0C" : "#E8F9FF", // dark mode bg | light mode white
+    borderColor: darkMode ? "#C4E1E6" : "#0C0C0C",     // consistent border colors
   }}
 >
   {darkMode ? (
     <Sun
       className="w-4 h-4 sm:w-5 sm:h-5"
-      style={{ color: "#ECE5C7" }} // light icon for dark mode
+      style={{ color: "#E8F9FF" }} // light icon for dark mode
     />
   ) : (
     <Moon
       className="w-4 h-4 sm:w-5 sm:h-5"
-      style={{ color: "#354259" }} // dark icon for light mode
+      style={{ color: "#0C0C0C" }} // dark icon for light mode
     />
   )}
 </motion.button>
